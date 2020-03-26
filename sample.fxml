@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="ModPower Calculator">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="600.0">
+                     <children>
+                        <HBox prefHeight="401.0" prefWidth="600.0">
+                           <children>
+                              <VBox prefHeight="401.0" prefWidth="699.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="ModPower">
+                                             <font>
+                                                <Font size="44.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="303.0" prefWidth="600.0">
+                                       <children>
+                                          <VBox prefHeight="302.0" prefWidth="603.0">
+                                             <children>
+                                                <HBox prefHeight="69.0" prefWidth="600.0">
+                                                   <children>
+                                                      <VBox prefHeight="87.0" prefWidth="281.0">
+                                                         <children>
+                                                            <Label prefHeight="39.0" prefWidth="118.0" text="Mod Power Calculator" />
+                                                            <Label text="Calculates (base)^(exponent) mod (modulus)" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="233.0" prefWidth="600.0">
+                                                   <children>
+                                                      <VBox prefHeight="233.0" prefWidth="600.0">
+                                                         <children>
+                                                            <HBox prefHeight="20.0" prefWidth="600.0" />
+                                                            <HBox prefHeight="60.0" prefWidth="600.0">
+                                                               <children>
+                                                                  <VBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="40.0">
+                                                                     <children>
+                                                                        <Label text="Base:" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER" prefHeight="53.0" prefWidth="160.0">
+                                                                     <children>
+                                                                        <TextField fx:id="base" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER" prefHeight="53.0" prefWidth="62.0">
+                                                                     <children>
+                                                                        <Label prefHeight="17.0" prefWidth="56.0" text="Exponent:" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER" prefHeight="53.0" prefWidth="159.0">
+                                                                     <children>
+                                                                        <TextField fx:id="exponent" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="58.0">
+                                                                     <children>
+                                                                        <Label prefHeight="17.0" prefWidth="50.0" text="Modulus:" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER" prefHeight="53.0" prefWidth="160.0">
+                                                                     <children>
+                                                                        <TextField fx:id="mod" />
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="40.0" prefWidth="600.0" />
+                                                            <HBox prefHeight="60.0" prefWidth="600.0">
+                                                               <children>
+                                                                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <Button fx:id="compute" mnemonicParsing="false" onAction="#calculate" text="Compute" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" />
+                                                                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <Label fx:id="equation" />
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Label fx:id="result" />
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Mortgage Calculator">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="372.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="372.0" prefWidth="613.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="96.0" prefWidth="511.0">
+                                             <children>
+                                                <Label text="Mortgage Calculator">
+                                                   <font>
+                                                      <Font size="44.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="96.0" prefWidth="159.0">
+                                             <children>
+                                                <Button fx:id="calculateMortgage" mnemonicParsing="false" onAction="#calculateMortgage" text="Calculate" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="281.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="287.0" prefWidth="120.0" spacing="30.0">
+                                       <children>
+                                          <Label text="Mortgage Amount:" />
+                                          <Label text="Interest Rate:" />
+                                          <Label text="Amortization Period:" />
+                                          <Label text="Payment Frequency:" />
+                                       </children>
+                                    </VBox>
+                                    <HBox prefHeight="277.0" prefWidth="10.0" />
+                                    <VBox prefHeight="277.0" prefWidth="200.0">
+                                       <children>
+                                          <HBox prefHeight="18.0" prefWidth="200.0" />
+                                          <HBox prefHeight="252.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="252.0" prefWidth="200.0" spacing="20.0">
+                                                   <children>
+                                                      <TextField fx:id="principleField" maxWidth="-Infinity" prefWidth="150.0" />
+                                                      <TextField fx:id="interestField" maxWidth="-Infinity" prefWidth="150.0" promptText="Express as a percentage" />
+                                                      <Slider fx:id="amortTime" blockIncrement="1.0" majorTickUnit="1.0" max="25.0" maxWidth="-Infinity" min="20.0" minorTickCount="0" prefWidth="150.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                                                      <ChoiceBox fx:id="payFreqBox" onMouseClicked="#showFreqOptions" prefWidth="150.0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="277.0" prefWidth="271.0">
+                                       <children>
+                                          <TabPane prefHeight="276.0" prefWidth="271.0" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                              <Tab text="Amortization Period">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="548.0" prefWidth="271.0">
+                                                         <children>
+                                                            <VBox prefHeight="246.0" prefWidth="271.0">
+                                                               <children>
+                                                                  <HBox prefHeight="246.0" prefWidth="271.0">
+                                                                     <children>
+                                                                        <VBox prefHeight="246.0" prefWidth="30.0" />
+                                                                        <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="283.0" prefWidth="120.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Label text="Number of Payments" />
+                                                                              <Label text="Mortgage Payment" />
+                                                                              <Label text="Principle Payments" />
+                                                                              <Label text="Interest Payments" />
+                                                                              <Label text="Total Cost" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                        <VBox alignment="CENTER" prefHeight="246.0" prefWidth="120.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Label fx:id="numberOfPayments" />
+                                                                              <Label fx:id="mortgagePayment" />
+                                                                              <Label fx:id="principlePayments" />
+                                                                              <Label fx:id="interestPayments" />
+                                                                              <Label fx:id="totalCost" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
